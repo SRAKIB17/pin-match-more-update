@@ -16,15 +16,15 @@
             <div class="col-md-6">
                 <div class="pin-generator half-width">
                     <input id="display-pin" class="form-control text-dark" type="text" disabled>
-                    <h1 id="time"  class="bg-secondary">Time: <span id="timeCount"></span></h1>
+                    <h1 id="time" class="bg-secondary text-light p-2">Time: <span id="timeCount"></span></h1>
                     <button onclick="generatePin()" class="generate-btn" id="pinMakeBtn">Generate Pin</button>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="input-section half-width">
                     <input id="typed-numbers" class="form-control" type="text">
-                    <div id="fail" class="h1 text-danger position-absolute  top-0 start-50">You fail all attampt <br>
-                    <button class="bg-primary" id="another"> Try another way</button>
+                    <div id="fail" class="h1 rounded text-danger position-absolute  top-0 start-50">You fail all attampt <br>
+                        <button class="bg-primary btn text-light h4" id="another"> Try another way</button>
 
                     </div>
                     <div class="numbers">
@@ -50,8 +50,9 @@
                                 <div class="button">C</div>
                             </div>
                             <div>
-                                <button onclick="verifyPin(this)" type="submit" class="submit-btn" id="btnSubmit">Submit</button>
-                                <p class="action-left"><span id="try">3</span>try left</p>
+                                <button onclick="verifyPin(this)" type="submit" class="submit-btn"
+                                    id="btnSubmit">Submit</button>
+                                <p class="action-left"><span id="try">3 </span> try left</p>
                             </div>
                         </div>
                     </div>
@@ -61,10 +62,10 @@
                 <p id="notify-fail" class="notify">❌ Pin Didn't Match, Please try again</p>
                 <p id="notify-success" class="notify">✅ Pin Matched... Secret door is opening for you</p>
             </div>
-            
+
         </div>
     </div>
-  
+
     <script src="./index.js"></script>
 </body>
 
